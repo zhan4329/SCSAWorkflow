@@ -1,11 +1,12 @@
 ---
 name: spac-commit
 description: "Use when generating Conventional Commit messages from staged changes, or proposing multiple commit options for unstaged changes with commit separation advice per CONTRIBUTING.md. Triggers: commit message, conventional commits, staged changes, unstaged changes, split commits, commit scope."
+author: Boqiang Zhang
 ---
 
 # Commit Message Generator Skill
 
-Generate commit messages according to CONTRIBUTING.md.
+Generate commit messages according to `CONTRIBUTING.md`.
 
 ## Scope and Intent
 
