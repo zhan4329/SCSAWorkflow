@@ -31,8 +31,7 @@ development through Task CR.10 has been merged and moved to
 
 ## Immediate Next Step
 
-Review the cleaned follow-up documentation and then prepare the CR.11/CR.12
-changes for commit and PR review.
+Review the completed CR.13 and CR.14 implementation before merge.
 
 ## Progress
 
@@ -49,6 +48,8 @@ None currently.
 None currently in the local-only follow-up scope.
 
 ### Addressed Tasks
+CR.14. Histogram Top-N Title Suffix for Filtered Groups/Facets.
+CR.13. Histogram Title Example Coverage.
 CR.12. Histogram Title Ownership and Facet Title Consistency.
 CR.11. Excessive Group Filtering With User Warning.
 
@@ -57,7 +58,8 @@ Tasks CR.1-CR.10 and numbered Tasks 1-22 are already part of the merged
 histogram facet history and are preserved under `docs/feat/histogram-facet/`.
 
 ### Issues (Open)
-None currently.
+None. The unresolved PR #433 review comments were converted into CR.13 and
+CR.14.
 
 ---
 
@@ -82,7 +84,7 @@ None currently.
 3. Focused test state from the latest log:
    - `tests/test_visualization/test_histogram.py` and
      `tests/templates/test_histogram_template.py` passed together
-     (`46 passed, 2 warnings`) for the CR.12 snapshot.
+     (`48 passed, 4 warnings`) after the CR.13/CR.14 implementation.
 
 ### Codebase Pattern Findings (Concise)
 1. Template layer owns user-facing parameter normalization and UX logging.

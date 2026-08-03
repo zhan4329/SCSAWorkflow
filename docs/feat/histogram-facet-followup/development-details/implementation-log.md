@@ -1,5 +1,22 @@
 # Implementation Log
 
+### 2026-08-03
+
+- Completed Tasks CR.14 and CR.13 (filtered histogram title suffixes and
+  explicit title examples).
+   - Added structured filtering metadata to the core histogram dataframe via
+     `df.attrs["spac_histogram_filter"]` without changing direct core titles or
+     the existing warning path.
+   - Added template suffixes for filtered output: `(top N of M groups)` for
+     grouped plots and `(top N of M facets)` for faceted plots.
+   - Added explicit template title examples for feature, annotation,
+     grouped-together, grouped-separate, and faceted scenarios.
+   - Updated the template test fixture to use separate `cell_type` and
+     `batch` annotations, with all title-affecting settings declared in the
+     individual tests.
+   - Verification:
+      - `NUMBA_DISABLE_JIT=1 MPLCONFIGDIR=/tmp/spac-mplconfig XDG_CACHE_HOME=/tmp/spac-cache /Users/bojohnzhang/miniconda3/envs/spac/bin/python -m pytest -q -p no:cacheprovider tests/test_visualization/test_histogram.py tests/templates/test_histogram_template.py` (48 passed, 4 warnings)
+
 ### 2026-06-30
 
 - Refined Task CR.12 title wording after Bojohn's review.

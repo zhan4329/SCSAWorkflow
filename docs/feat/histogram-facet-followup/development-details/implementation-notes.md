@@ -6,8 +6,9 @@ development heuristics live in the `spac-dev-guide` skill.
 
 ## Current Scope
 
-- Keep this PR focused on CR.11 excessive-group filtering and CR.12 title
-  ownership.
+- This follow-up records CR.11-CR.14 histogram filtering and title behavior.
+- The latest completed slice covers CR.13 title examples and CR.14 filtered
+  top-N title suffixes.
 - Do not use this follow-up for whitespace-only cleanup or broad formatting
   churn.
 

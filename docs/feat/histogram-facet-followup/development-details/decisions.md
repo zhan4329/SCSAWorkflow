@@ -1,5 +1,28 @@
 # Decisions
 
+### D56. Convert Remaining PR Comments Into Title-Focused Tasks
+Date: 2026-08-03
+Decision:
+Convert the two unresolved PR #433 review threads into review tasks CR.13 and
+CR.14.
+
+Details:
+- CR.13 owns concrete unit-test examples/assertions for generated histogram
+  titles in the main scenarios requested by the reviewer.
+- CR.14 owns a concise title-suffix notice for filtered top-N histogram output.
+- Use `(top 10 of 37 groups)` when filtered categories are grouped histogram
+  groups.
+- Use `(top 10 of 37 facets)` when filtered categories correspond to omitted
+  facet panels.
+- Prefer putting the suffix on the figure-level or shared title when possible,
+  keeping individual panel titles concise.
+
+Rationale:
+The remaining reviewer feedback is title-facing: one request asks for explicit
+title examples in tests, and the other asks whether users should see that not
+all groups are displayed. A short title suffix keeps the filtered-output notice
+visible without adding a separate plot annotation.
+
 ### D55. Split Implementation Notes by Ownership
 Date: 2026-06-30
 Decision:

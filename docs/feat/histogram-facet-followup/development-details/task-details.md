@@ -2,6 +2,59 @@
 
 ## Code Review
 
+### Task CR.14. Histogram Top-N Title Suffix for Filtered Groups/Facets
+Location: src/spac/visualization.py, src/spac/templates/histogram_template.py,
+tests
+Date: 2026-08-03
+Last updated: 2026-08-03
+
+Status: Done
+
+Implementation remarks:
+- Convert the unresolved PR #433 review thread on
+  `src/spac/visualization.py:833`.
+- Add a concise template title suffix when `max_groups` hides categories.
+- Use `(top 10 of 37 groups)` for grouped output.
+- Use `(top 10 of 37 facets)` when omitted categories are facet panels.
+- Prefer a shared/figure-level suffix instead of repeating it in every panel
+  title.
+- Keep core direct-call titles unchanged; core already warns direct API users
+  when filtering occurs.
+- Have core attach structured filtering metadata to the returned histogram
+  dataframe, e.g. via `df.attrs`, so the template can build the suffix without
+  parsing warnings or recomputing raw groups.
+
+Action items:
+- [x] Add grouped top-N suffix behavior in the template title.
+- [x] Add faceted top-N suffix behavior in the template title.
+- [x] Attach core filtering metadata to the returned histogram dataframe.
+- [x] Keep existing warning/logging behavior.
+- [x] Add focused suffix tests.
+- [x] Run focused histogram and template tests.
+
+### Task CR.13. Histogram Title Example Coverage
+Location: src/spac/visualization.py, src/spac/templates/histogram_template.py,
+tests
+Date: 2026-07-14
+Last updated: 2026-08-03
+
+Status: Done
+
+Implementation remarks:
+- Convert the unresolved PR #433 review thread on
+  `tests/templates/test_histogram_template.py:123`.
+- Add real unit-test examples with expected title strings, not only smoke
+  checks.
+- Fold the previous CR.13 title-example task into this clarified scope.
+
+Action items:
+- [x] Add feature-title examples.
+- [x] Add annotation-title examples.
+- [x] Add grouped-together title examples.
+- [x] Add grouped-separate title examples.
+- [x] Add faceted-title examples.
+- [x] Run focused histogram and template tests.
+
 ### Task CR.12. Histogram Title Ownership and Facet Title Consistency
 Location: src/spac/visualization.py, src/spac/templates/histogram_template.py, tests
 Date: 2026-06-09
