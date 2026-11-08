@@ -2,6 +2,8 @@
 
 These examples show the title layout before and after [SCSAWorkflow PR #434](https://github.com/FNLCR-DMAP/SCSAWorkflow/pull/434). The figures on the left use the previous title layout; the figures on the right use the new line break. All examples plot the `CD25` Feature.
 
+The figures were generated from the Histogram test notebook using the same dataset and settings: [before](https://github.com/zhan4329/SCSAWorkflow/blob/fc0885535ea6bb00f8579257b164529bc2d0784b/notebooks/histogram/test_histogram-text-clipping-spac.ipynb) and [after](https://github.com/zhan4329/SCSAWorkflow/blob/ad608cbedb172782862828de2cd020a8e17f0300/notebooks/histogram/test_histogram-text-clipping-spac.ipynb).
+
 ## Original Table
 
 ### Grouped
